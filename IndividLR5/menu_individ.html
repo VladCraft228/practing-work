@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 10px 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            color: black;
+            font-size: 14pt;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        .logo a span {
+            margin-left: 10px;
+        }
+
+        .menu-container {
+            display: flex;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .menu-inner {
+            border-style: hidden;
+        }
+
+        .menu-inner td {
+            padding: 0 20px;
+        }
+
+        .menu-inner td a {
+            color: rgb(59, 59, 59);
+            font-size: 14pt;
+            text-decoration: none;
+        }
+
+        .menu-inner td a:active {
+            color: black;
+            font-size: 14pt;
+            font-weight: bold;
+        }
+
+        .menu-inner td a:visited {
+            color: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="home.html" target="content">
+                <img src="https://upload.wikimedia.org/wikipedia/uk/c/cc/Fcdniprologonew.png" alt="logo">
+                <span>ФК Дніпро - неофіційний сайт</span>
+            </a>
+        </div>
+        <div class="menu-container">
+            <table class="menu-inner">
+                <tr>
+                    <td><a href="home.html" target="content">Головна</a></td>
+                    <td><a href="achieve.html" target="content">Досягнення</a></td>
+                    <td><a href="paraphernalia.html" target="content">Атрибутика</a></td>
+                    <td><a href="stadium.html" target="content">Стадіон</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
