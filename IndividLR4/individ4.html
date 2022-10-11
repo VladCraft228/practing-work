@@ -6,172 +6,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Individ4</title>
+    <style>
+        body {
+            margin: 0 20%;
+            background: url(https://estnn.com/wp-content/uploads/2022/08/f124772add8643a64bcf03d9d67665fe.jpg.webp);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14pt;
+        }
+
+
+        fieldset {
+            background: #000;
+            opacity: 85%;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        legend {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 3px 6px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        input {
+            font-size: 14pt;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 5px;
+            
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            background-color: #000;
+            border: none;
+            text-decoration: none;
+            color: white;
+            opacity: 85%;
+            border: 1px solid white;
+            padding: 20px 20px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        input[type=file] {
+            background-color: #000;
+            border: none;
+            text-decoration: none;
+            color: white;
+            opacity: 85%;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        input[type=text],
+        input[type=date],
+        input[type=number],
+        textarea,
+        select,
+        input[list=title] {
+            background-color: rgb(12, 12, 12);
+            border: none;
+            text-decoration: none;
+            color: white;
+            opacity: 85%;
+            border: 1px solid white;
+            margin: 0;
+        }
+
+        textarea {
+            font-size: 14pt;
+            resize: vertical;
+            border-radius: 5px;
+        }
+
+        select {
+            font-size: 14pt;
+            border-radius: 5px;
+        }
+
+        em {
+            color: red;
+        }
+
+    </style>
 </head>
 
-<body
-    style="background: url(https://estnn.com/wp-content/uploads/2022/08/f124772add8643a64bcf03d9d67665fe.jpg.webp); color: white; ">
+<body>
+    <fieldset>
+        <h1 style="text-align: center;">Анкета учасника змагань з CS:GO</h1>
+    </fieldset>
     <form name="info" method="post">
-        <table style="width: 50%; background-color: #0f111a; opacity: 95%; border: 2px solid black; border-radius: 5px;"
-            align="center">
-            <tr>
-                <td colspan="2">
-                    <h1 align="center">Анкета учасника змагань з CS:GO</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>Аватарка</td>
-                <td align="right"><input type="file" required></td>
-            </tr>
-            <tr>
-                <td>Ваше ім'я:</td>
-                <td align="right"><input name="name" type="text" size="20" required></td>
-            </tr>
-            <tr>
-                <td>Дата народження:</td>
-                <td align="right"><select name="num" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                    </select>
-                    <select name="month" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    <input name="year" type="text" size="4" maxlength="4" required>
-                </td>
-            </tr>
-            <tr>
-                <td>Steam-ID:</td>
-                <td align="right"><input name="steamid" type="number" maxlength="17"></td>
-            </tr>
-            <tr>
-                <td>Стать:</td>
-                <td align="right">
-                    <label for="man">Ч</label>
-                    <input type="radio" name="gender" value="man">
-                    <label for="woman">Ж</label>
-                    <input type="radio" name="gender" value="woman">
-                </td>
-            </tr>
-            <tr>
-                <td>Вкажіть, ваше звання в CS:GO:</td>
-                <td align="right"><select name="title" size="5" required>
-                        <option value="silver1">Silver I</option>
-                        <option value="silver2">Silver II</option>
-                        <option value="silver3">Silver III</option>
-                        <option value="silver4">Silver IV</option>
-                        <option value="silverelite">Silver Elite</option>
-                        <option value="silverelitemaster">Silver Elite Master</option>
-                        <option value="goldnova1">Gold Nova I</option>
-                        <option value="goldnova2">Gold Nova II</option>
-                        <option value="goldnova3">Gold Nova III</option>
-                        <option value="goldnovamaster">Gold Nova Master</option>
-                        <option value="masterguardian1">Master Guardian I</option>
-                        <option value="masterguardian2">Master Guardian II</option>
-                        <option value="masterguardianelite">Master Guardian Elite</option>
-                        <option value="distinguishedmasterguardian">Distinguished Master Guardian</option>
-                        <option value="legendaryeagle">Legendary Eagle</option>
-                        <option value="legendaryeaglemaster">Legendary Eagle Master</option>
-                        <option value="suprememasterfirstclass">Supreme Master First Class</option>
-                        <option value="theglobalelite">The Global Elite</option>
-                    </select></td>
-            </tr>
-            <tr>
-                <td>Вкажіть, ваш ранг в CS:GO:</td>
-                <td align="right">
-                    <select name="rank" size="1">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td valign="top">Які ваші якості та навички у грі CS:GO:</td>
-                <td align="right"><textarea name="quality" cols="40" rows="7" required></textarea></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Подача запросу">
-                    <input type="reset" value="Скинути">
-                </td>
-            </tr>
-        </table>
+        <fieldset>
+            <legend>Контактна інформація</legend>
+            <p><label>Аватарка:</label>
+                <input type="file" accept="image/png, image/jpeg">
+            </p>
+            <p><label>Ваше ім'я:<em>*</em></label>
+                <input name="name" type="text" required>
+            </p>
+            <p><label>Дата народження:<em>*</em> </label>
+                <input type="date" required>
+            </p>
+            <p><label>Steam-ID:<em>*</em> </label>
+                <input name="steamid" type="text" pattern="\d*" maxlength="17" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Персональна інформація</legend>
+            <p><label>Стать:</label>
+                <label for="man">Ч</label>
+                <input type="radio" name="gender" value="man">
+                <label for="woman">Ж</label>
+                <input type="radio" name="gender" value="woman">
+            </p>
+            <p> <label>Вкажіть, ваше звання в CS:GO:<em>*</em></label>
+                <input required list="title">
+                <datalist id="title" name="title">
+                    <option value="silver1">Silver I</option>
+                    <option value="silver2">Silver II</option>
+                    <option value="silver3">Silver III</option>
+                    <option value="silver4">Silver IV</option>
+                    <option value="silverelite">Silver Elite</option>
+                    <option value="silverelitemaster">Silver Elite Master</option>
+                    <option value="goldnova1">Gold Nova I</option>
+                    <option value="goldnova2">Gold Nova II</option>
+                    <option value="goldnova3">Gold Nova III</option>
+                    <option value="goldnovamaster">Gold Nova Master</option>
+                    <option value="masterguardian1">Master Guardian I</option>
+                    <option value="masterguardian2">Master Guardian II</option>
+                    <option value="masterguardianelite">Master Guardian Elite</option>
+                    <option value="distinguishedmasterguardian">Distinguished Master Guardian</option>
+                    <option value="legendaryeagle">Legendary Eagle</option>
+                    <option value="legendaryeaglemaster">Legendary Eagle Master</option>
+                    <option value="suprememasterfirstclass">Supreme Master First Class</option>
+                    <option value="theglobalelite">The Global Elite</option>
+                </datalist>
+            </p>
+            <p><label>Вкажіть, ваш ранг в CS:GO:</label>
+                <select name="rank" size="1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                </select>
+            </p>
+            <p><label style="vertical-align: top;">Які ваші якості та навички у грі CS:GO:<em>*</em></label>
+                <textarea minlength="20" name="quality" cols="40" rows="7" required></textarea>
+            </p>
+        </fieldset>
+        <input type="submit" value="Подача запросу">
+        <input type="reset" value="Скинути">
     </form>
 </body>
 
